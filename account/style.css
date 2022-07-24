@@ -1,0 +1,95 @@
+:root {
+    --color-border: #e5e5e5;
+}
+
+#register .upload-profile-image{
+    position: relative;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: filter .8s ease;
+}
+
+#register .upload-profile-image:hover{
+    filter: drop-shadow(1px 1px 22px #7584bb);
+}
+
+#upload-profile{
+    position:absolute;
+    top: 0;
+    z-index: 10;
+    width: 200px;
+    margin-top: 0px;
+    opacity: 0;
+}
+
+#upload-profile::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+#upload-profile::before{
+    content:'';
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#register .upload-profile-image .camera-icon{
+    position: absolute;
+    top: 70px;
+    width: 60px !important;
+    filter: invert(30%) !important;
+}
+
+#register .upload-profile-image:hover .camera-icon{
+    filter: invert(100%) !important;
+}
+
+/* register and login */
+#reg-form input[type='text'],
+#reg-form input[type='number'],
+#reg-form input[type='password'],
+#reg-form input[type='email'],
+#reg-form input[type='date'],
+#log-form input[type='email'],
+#log-form input[type='password']{
+   outline: none;
+   box-shadow: none;
+}
+
+select#gender{
+    outline: none;
+    box-shadow: none;
+}
+body {
+	background: #ebeef0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+form {
+	width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
